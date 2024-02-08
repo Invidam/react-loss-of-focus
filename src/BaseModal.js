@@ -9,7 +9,7 @@ export default function BaseModal({open, handleClose, style, Body}) {
         aria-describedby="modal-modal-description"
     >
         <Box sx={style}>
-            <Body/>
+            {Body}
         </Box>
     </Modal>
 }

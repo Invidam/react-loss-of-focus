@@ -25,7 +25,7 @@ function App() {
     const handleClose = () => setOpen(false);
 
 
-    const Body = () => <div>
+    const Body = ( <div>
             <Typography id="modal-modal-title" variant="h6" component="h2">
                 Text in a modal
             </Typography>
@@ -35,7 +35,7 @@ function App() {
             <TextField id="outlined-basic" label="Outlined" variant="outlined" defaultValue={text}
                        onChange={(e) => {
                            setText(e.target.value)
-                       }}/></div>;
+                       }}/></div>);
 
     return (<div className="App">
             <Button onClick={handleOpen}>Open modal</Button>
